@@ -12,6 +12,9 @@ class Curso:
     def get_adquirir_curso(self):
         return self.__adquirir_curso();
     
+    def get_titulo(self):
+        return self.__titulo;
+    
 
 
 curso = Curso()
@@ -20,3 +23,4 @@ curso = Curso()
 # curso.__adquirir_curso() # No se podrá acceder porque es privado
 
 curso.get_adquirir_curso();
+print(curso.get_titulo);
