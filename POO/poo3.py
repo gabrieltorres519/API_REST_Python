@@ -21,5 +21,9 @@ pelicula = Pelicula("Actividad paranormal", 120, "terror");
 
 print(catalogo1.peliculas);
 catalogo1.peliculas.append(pelicula);
-print(catalogo1.peliculas);
+print(catalogo1.peliculas); #Es una lista (array)
+print(catalogo1.peliculas[0]); #El elemento es accesible en la lista como un array 
+print(catalogo1.peliculas[0].nombre); # Cada elemento de esa lista será un objeto de la clase Pelicula 
+
+
 
