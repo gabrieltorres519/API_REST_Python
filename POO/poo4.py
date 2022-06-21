@@ -25,7 +25,9 @@ class Perro(Animal):
         print("El perro muerde");
 
 class Gato(Animal):
-    pass
+    
+    def saltar(self):
+        print("El gato salta");
 
 
 perro = Perro(3, 4, "Carnivoro");
@@ -39,6 +41,9 @@ print(perro.alimentacion)
 print(perro.raza)
 print(perro.ladrido)
 print(perro.pelaje)
+perro.correr();
+perro.caminar();
+perro.ladrar();
 
 
 
