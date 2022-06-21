@@ -1,3 +1,4 @@
+#Pasando objeto como parámetro a otro objeto
 class Catalogo:
 
     def __init__(self, nombre):

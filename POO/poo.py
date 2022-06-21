@@ -1,3 +1,4 @@
+# Clases e instanciación de objetos
 class Auto:
 
     def __init__(self, marca, color, cantidad_ruedas, velocidad_maxima):

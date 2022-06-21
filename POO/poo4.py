@@ -1,3 +1,4 @@
+# Herencia
 class Animal:
 
     def __init__(self, edad, numero_patas, alimentacion):
