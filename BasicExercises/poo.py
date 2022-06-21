@@ -12,7 +12,7 @@ class Auto:
       de sus atributos.
     """
     def __str__(self):
-        return f"Auto: {self.motor}, {self.marca}, {self.cantidad_ruedas}, {self.velocidad} \n";
+        return f"Auto: {self.motor}, {self.color}, {self.marca}, {self.cantidad_ruedas}, {self.velocidad} \n";
 
     """
      Métodos propios
@@ -38,4 +38,11 @@ aventador.acelerar();
 aventador.frenar();
 huracan.acelerar();
 huracan.frenar();
+
+
+aventador.color = "amarillo";
+print(aventador);
+
+
+
  
