@@ -17,7 +17,7 @@ def leer_fichero():
 
 
 def escribir_fichero():
-    file = open('/home/gabriel/Documentos/PythonIntroduccion/ficheros', 'w')
+    file = open('/home/gabriel/Documentos/PythonIntroduccion/ficheros/file.txt', 'w')
 
     dato = "Mi apellido es Fenske"
 
@@ -27,10 +27,12 @@ def escribir_fichero():
 
 
 def escribir_sin_borrar():
-   file = open('/home/gabriel/Documentos/PythonIntroduccion/ficheros', 'a')
+   file = open('/home/gabriel/Documentos/PythonIntroduccion/ficheros/file.txt', 'a')
    dato = "\nEsta linea es nueva y la estoy agregando sin borrar nada"
    file.write(dato)
    file.close()
 
 
+leer_fichero()
+escribir_sin_borrar()
 leer_fichero()
