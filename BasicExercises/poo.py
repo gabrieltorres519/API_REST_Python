@@ -6,6 +6,8 @@ class Auto:
         self.cantidad_ruedas = cantidad_ruedas
         self.velocidad = velocidad_maxima
         self.motor = 2.0
+        self.motores = [2.1,2.5,4.2,2.2]
+        self.marcas_preestablecidas = {"altagama": "audi", "bajagama": "toyota"}
 
     """
       El método string será ejecutado siempre que se llame al objeto instanciado, aún cuando solo se llame a alguno
@@ -44,5 +46,6 @@ aventador.color = "amarillo";
 print(aventador);
 
 
-
+print(aventador.motores[1]);
+print(aventador.marcas_preestablecidas["altagama"]);
  
