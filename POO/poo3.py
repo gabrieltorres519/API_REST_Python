@@ -11,6 +11,8 @@ class Pelicula:
         self.duracion = duracion #minutos
         self.genero = genero
 
+    ## Nos sirve cuando queremos poder usar el método dentro de otra clase que no sea esta misma
+    ## como al pasar por parámetros un objeto de esta clase a otra clase
     def __repr__(self):
         return f"{self.nombre}, {self.duracion}, {self.genero}"
 
