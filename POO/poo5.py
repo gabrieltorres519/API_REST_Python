@@ -11,8 +11,10 @@ class Arma:
 
 class Pistola(Arma):
 
+    # El polimorfismo se aplica cuando el mismo método de la clase padre hace algo diferente en la clase hija
     def disparar(self):
-        return super().disparar()
+        print("El arma dispara lento");
+
 
 
 arma = Arma(15,7)
