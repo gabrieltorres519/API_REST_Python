@@ -24,7 +24,9 @@ class Perro(Animal):
     def morder(self):
         print("El perro muerde");
 
-    
+class Gato(Animal):
+    pass
+
 
 perro = Perro(3, 4, "Carnivoro");
 perro.raza = "Caniche"
