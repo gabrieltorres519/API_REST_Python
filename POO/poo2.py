@@ -21,6 +21,9 @@ class Usuario:
     def __repr__(self):
         return f"{self.nombre}, {self.apellido}, {self.edad}, {self.persona_masculina}, {self.premium}"
 
+    def __del__(self):
+        print("Objeto borrado")
+
     def convertir_premium(self):
         self.premium = True;
 
@@ -58,9 +61,13 @@ print(usuario);
 print(usuario.premium);
 usuario.mirar_peliculas()
 
+del usuario;
+
 
 es_mayor = Usuario.usuario_mayor(18);
 print(es_mayor);
 
 cantidad_usuarios = Usuario.mi_cantidad_usuarios();
 print(cantidad_usuarios);
+
+
