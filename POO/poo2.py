@@ -3,6 +3,14 @@ from lib2to3.pytree import convert
 
 class Usuario:
 
+    """
+     Atributos de la clase en sí
+    """
+    cantidad_usuarios = 100; 
+
+    """
+     Atributos que tendrán los objetos que se instancien de la clase
+    """
     def __init__(self, nombre, apellido, edad, persona_masculina):
         self.nombre = nombre
         self.apellido = apellido
@@ -33,6 +41,10 @@ class Usuario:
     def usuario_mayor(edad):
         return edad >= 18;
 
+    @classmethod
+    def mi_cantidad_usuarios(cls):
+        return cls.cantidad_usuarios;
+
 
 
 
@@ -50,4 +62,5 @@ usuario.mirar_peliculas()
 es_mayor = Usuario.usuario_mayor(18);
 print(es_mayor);
 
-
+cantidad_usuarios = Usuario.mi_cantidad_usuarios();
+print(cantidad_usuarios);
