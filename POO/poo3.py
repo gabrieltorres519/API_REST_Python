@@ -11,7 +11,7 @@ class Pelicula:
         self.duracion = duracion #minutos
         self.genero = genero
 
-    def __str__(self):
+    def __repr__(self):
         return f"{self.nombre}, {self.duracion}, {self.genero}"
 
 catalogo1 = Catalogo("Catalogo de terror");
