@@ -16,13 +16,38 @@ class Usuario:
     def convertir_premium(self):
         self.premium = True;
 
+    def mirar_peliculas(self):
+        if self.premium:
+            print("El usuario puede mirar las películas");
+        else:
+            print("El usuario no es premium");
+
+    
+    """
+     Los métodos estáticos son accesibles sin la necesidad de instanciar un objeto de la clase,
+     para esto utilizamos un decorador de Python que ya viene por defecto con el lenguaje (no 
+     tenemos que crearlo) llamado @staticmethod
+    """
+
+    @staticmethod
+    def usuario_mayor(edad):
+        return edad >= 18;
+
+
+
 
 usuario = Usuario("Gaston", "Torres", 22, True);
+
 print(usuario);
 print(usuario.premium);
+usuario.mirar_peliculas()
 usuario.convertir_premium();
 print(usuario);
 print(usuario.premium);
+usuario.mirar_peliculas()
 
+
+es_mayor = Usuario.usuario_mayor(18);
+print(es_mayor);
 
 
